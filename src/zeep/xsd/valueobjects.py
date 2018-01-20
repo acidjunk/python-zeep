@@ -222,12 +222,15 @@ def _process_signature(xsd_type, args, kwargs):
         available_kwargs.remove('_raw_elements')
 
     if available_kwargs:
-        raise TypeError((
-            "%s() got an unexpected keyword argument %r. " +
-            "Signature: `%s`"
-        ) % (
-            xsd_type.qname or 'ComplexType',
-            next(iter(available_kwargs)),
-            xsd_type.signature(standalone=False)))
+        if next(iter(available_kwargs)) == 'Id':
+            result["Id"] = kwargs["Id"]
+        else:
+            raise TypeError((
+                "%s() got an unexpected keyword argument %r. " +
+                "Signature: `%s`"
+            ) % (
+                xsd_type.qname or 'ComplexType',
+                next(iter(available_kwargs)),
+                xsd_type.signature(standalone=False)))
 
     return result

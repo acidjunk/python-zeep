@@ -1,5 +1,6 @@
 import copy
 import logging
+import re
 from collections import OrderedDict, deque
 from itertools import chain
 
@@ -176,6 +177,24 @@ class ComplexType(AnyType):
             if elements:
                 if schema.strict:
                     raise XMLParseError("Unexpected element %r" % elements[0].tag)
+                elif 1:  # todo make it a feature toggle?
+                    id_found = False
+
+                    print(init_kwargs.keys())
+                    for key in init_kwargs.keys():
+                        for item in elements:
+                            # strip namespace
+                            tag = re.sub("[\{].*?[\}]", "", item.tag)
+                            if key == tag:
+                                try:
+                                    init_kwargs[key] = int(item.text)
+                                except:
+                                    init_kwargs[key] = item.text
+                            if tag == "Id":
+                                id_found = int(item.text)
+                    if id_found:
+                        init_kwargs["Id"] = id_found
+
                 else:
                     init_kwargs['_raw_elements'] = elements
 
