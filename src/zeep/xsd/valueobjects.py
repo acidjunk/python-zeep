@@ -168,6 +168,7 @@ def _process_signature(xsd_type, args, kwargs):
 
 
     """
+    print(f'\n--\n{xsd_type}')
     result = OrderedDict()
     # Process the positional arguments. args is currently still modified
     # in-place here
