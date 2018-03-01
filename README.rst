@@ -77,7 +77,7 @@ Support
 If you want to report a bug then please first read 
 http://docs.python-zeep.org/en/master/reporting_bugs.html
 
-I'm also able to offer commercial support.  As in contracting work. Please
+I'm also able to offer commercial support. As in contracting work. Please
 contact me at info@mvantellingen.nl for more information.  Note that asking 
-questions or reporting bugs via this e-mail address will be ignored. Pleae use
+questions or reporting bugs via this e-mail address will be ignored. Please use
 the appropriate channels for that (e.g. stackoverflow)
