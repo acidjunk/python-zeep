@@ -1,0 +1,68 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <GetAllCustomersFilteredResponse xmlns="http://tempuri.org/">
+            <GetAllCustomersFilteredResult xmlns:a="http://schemas.datacontract.org/2004/07/PresentationModel.Customer"
+                                           xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:Customer z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+                    <Errors i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/PresentationModel"/>
+                    <HasErrors xmlns="http://schemas.datacontract.org/2004/07/PresentationModel">false</HasErrors>
+                    <Id xmlns="http://schemas.datacontract.org/2004/07/PresentationModel">2644557</Id>
+                    <RowVersion xmlns="http://schemas.datacontract.org/2004/07/PresentationModel">2018-02-08T05:01:24
+                    </RowVersion>
+                    <a:AccountEmail/>
+                    <a:AccountManager/>
+                    <a:Address>POSTBUS 19035</a:Address>
+                    <a:ChannelReservations i:nil="true"
+                                           xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Circuits"/>
+                    <a:Circuits i:nil="true"
+                                xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Circuits"/>
+                    <a:Code>AD93DAEF-0911-E511-80D0-005056956C1A</a:Code>
+                    <a:CustomerRelatedContactGroups i:nil="true"/>
+                    <a:CustomerRelatedContacts i:nil="true"/>
+                    <a:CustomerRelatedContracts i:nil="true"/>
+                    <a:FaxNumber/>
+                    <a:FullName>SURFNET BV</a:FullName>
+                    <a:InNumbers i:nil="true"
+                                 xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Warehouse"/>
+                    <a:IpRanges i:nil="true"
+                                xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.IpManagement"/>
+                    <a:Name>SURFNET</a:Name>
+                    <a:Nodes i:nil="true"
+                             xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Equipment"/>
+                    <a:Number>536</a:Number>
+                    <a:NumberManagementList i:nil="true"
+                                            xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.NumberManagement"/>
+                    <a:OloCircuits i:nil="true"
+                                   xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Circuits"/>
+                    <a:Orders i:nil="true" xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Orders"/>
+                    <a:PhoneNumber>+31 887873000</a:PhoneNumber>
+                    <a:PortReservations i:nil="true"
+                                        xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Equipment"/>
+                    <a:PwCodeBlue/>
+                    <a:PwExtraInfo/>
+                    <a:PwInformDown>YES</a:PwInformDown>
+                    <a:PwInformHik>YES</a:PwInformHik>
+                    <a:PwInformedList i:nil="true"
+                                      xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.PlannedWork"/>
+                    <a:PwLanguage>NL</a:PwLanguage>
+                    <a:Racks i:nil="true"
+                             xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Equipment"/>
+                    <a:ServiceCenter>0</a:ServiceCenter>
+                    <a:ServiceCenterName>SURFNET</a:ServiceCenterName>
+                    <a:Sites i:nil="true" xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Site"/>
+                    <a:Sla i:nil="true" xmlns:b="http://schemas.datacontract.org/2004/07/PresentationModel.Equipment"/>
+                    <a:SlaId i:nil="true"/>
+                    <a:Website>HTTP://WWW.SURFNET.NL</a:Website>
+                </a:Customer>
+            </GetAllCustomersFilteredResult>
+            <pager xmlns:a="http://schemas.datacontract.org/2004/07/PresentationModel.DatabaseFilter"
+                   xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:Descending>false</a:Descending>
+                <a:ElementsRead>1</a:ElementsRead>
+                <a:NumberOfElements>100</a:NumberOfElements>
+                <a:OrderByProperty i:nil="true"/>
+                <a:StartElement>0</a:StartElement>
+            </pager>
+        </GetAllCustomersFilteredResponse>
+    </s:Body>
+</s:Envelope>
