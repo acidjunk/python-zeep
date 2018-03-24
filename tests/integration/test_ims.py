@@ -10,6 +10,7 @@ def read_file(file_name, folder='wsdl_ims'):
     with open(file, encoding='UTF-8') as f:
         return f.read()
 
+
 def test_find_product(ims_login_token):
     with requests_mock.mock() as m:
         m.get("http://example.com/inventory?wsdl", text=read_file("inventory.wsdl"))
@@ -25,6 +26,7 @@ def test_find_product(ims_login_token):
         pager = {"StartElement": 0, "Descending": False, "NumberOfElements": 10,
                  "OrderByProperty": None}
         assert client.service.GetAllProductsFiltered(pager=pager, filter=filter, sessionToken=ims_login_token)
+
 
 def test_find_customer(ims_login_token):
     with requests_mock.mock() as m:
