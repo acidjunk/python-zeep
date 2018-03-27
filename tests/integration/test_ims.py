@@ -7,7 +7,7 @@ import zeep
 
 def read_file(file_name, folder="wsdl_ims"):
     file = os.path.join(os.path.dirname(os.path.realpath(__file__)), folder, file_name)
-    with open(file, encoding="UTF-8") as f:
+    with open(file) as f:
         return f.read()
 
 
