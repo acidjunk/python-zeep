@@ -371,14 +371,11 @@ class ComplexType(AnyType):
         element = []
         if self._element and base_element:
 
-            # not sure if this is needed. But when self._element.resolve() is called it seems to have an side effect
+            # Not sure if this is needed. But when self._element.resolve() is called it seems to have an side effect
             if not self._resolved:
                 self._element = self._element.resolve()
 
             base_element = base_element.resolve()
-
-            # print(f"self._element {self._element}\n\n self._element.resolve() {self._element.resolve()}\n\n")
-
 
             element = self._element.clone(self._element.name)
             if isinstance(base_element, OrderIndicator):
